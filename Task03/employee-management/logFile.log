@@ -1,0 +1,108 @@
+2023/10/29 19:37:01 Request To Add Employee
+2023/10/29 19:37:02 Employee Added Succesfully
+2023/10/29 19:37:10 Request To Get All Employee
+2023/10/29 19:37:10 Fetched All Employees
+2023/10/29 19:37:57 Request To Update Employee Details
+2023/10/29 19:37:57 Employee Updated Succesfully
+2023/10/29 19:38:04 Request To Get All Employee
+2023/10/29 19:38:05 Fetched All Employees
+2023/10/29 19:38:17 Request To Delete Employee
+2023/10/29 19:38:24 Request To Delete Employee
+2023/10/29 19:38:30 Request To Delete Employee
+2023/10/29 19:38:42 Request To Search Employee
+2023/10/29 19:38:57 Request To Search Employee
+2023/10/29 19:39:22 Request To Search Employee
+2023/10/29 19:39:23  Got The Employee Details 
+2023/10/29 19:39:44 Request To Search Employee
+2023/10/29 19:39:45  Got The Employee Details 
+2023/10/29 19:40:02 Request To Search Employee
+2023/10/29 19:40:02 Employee not found
+2023/10/29 19:40:11 Request To Search Employee
+2023/10/29 19:40:11  Got The Employee Details 
+2023/10/29 19:40:30 Request To Search Employee
+2023/10/29 19:40:31  Got The Employee Details 
+2023/10/29 19:40:50 Request To Search Employee
+2023/10/29 19:40:54 Request To Get All Employee
+2023/10/29 19:40:55 Fetched All Employees
+2023/10/30 10:31:50 Request To Get All Employee
+2023/10/30 10:32:24 Request To Get All Employee
+2023/10/30 10:32:40 Request To Add Employee
+2023/10/30 10:32:41 Employee Added Succesfully
+2023/10/30 10:32:47 Request To Get All Employee
+2023/10/30 10:33:14 Request To Search Employee
+2023/10/30 10:33:14  Got The Employee Details 
+2023/10/30 10:33:30 Request To Search Employee
+2023/10/30 10:33:30  Got The Employee Details 
+2023/10/30 10:33:44 Request To Search Employee
+2023/10/30 10:33:44  Got The Employee Details 
+2023/10/30 10:33:49 Request To Search Employee
+2023/10/30 10:33:49 Employee not found
+2023/10/30 10:33:56 Request To Search Employee
+2023/10/30 10:33:56  Got The Employee Details 
+2023/10/30 10:34:20 Request To Search Employee
+2023/10/30 10:34:21 Employee not found
+2023/10/30 10:34:30 Request To Search Employee
+2023/10/30 10:34:30  Got The Employee Details 
+2023/10/30 10:34:38 Request To Search Employee
+2023/10/30 10:36:34 Request To Delete Employee
+2023/10/30 10:36:35 Employee Deleted Succesfully
+2023/10/30 10:36:55 Request To Delete Employee
+2023/10/30 10:36:55 Employee Deleted Succesfully
+2023/10/30 10:38:38 Request To Get All Employee
+2023/10/30 10:38:39 Fetched All Employees
+2023/10/30 10:39:17 Request To Add Employee
+2023/10/30 10:39:19 Employee Added Succesfully
+2023/10/30 10:40:03 Request To Add Employee
+2023/10/30 10:40:04 Employee Added Succesfully
+2023/10/30 10:40:35 Request To Add Employee
+2023/10/30 10:40:36 Employee Added Succesfully
+2023/10/30 10:40:42 Request To Get All Employee
+2023/10/30 10:40:42 Fetched All Employees
+2023/10/30 10:41:44 Request To Update Employee Details
+2023/10/30 10:41:46 Employee Updated Succesfully
+2023/10/30 10:41:56 Request To Search Employee
+2023/10/30 10:42:15 Request To Update Employee Details
+2023/10/30 10:42:16 Employee Updated Succesfully
+2023/10/30 10:42:20 Request To Search Employee
+2023/10/30 10:42:31 Request To Search Employee
+2023/10/30 10:42:40 Request To Search Employee
+2023/10/30 10:42:41  Got The Employee Details 
+2023/10/30 10:42:56 Request To Search Employee
+2023/10/30 10:42:57  Got The Employee Details 
+2023/10/30 10:43:57 Request To Update Employee Details
+2023/10/30 10:43:58 Employee Updated Succesfully
+2023/10/30 10:44:07 Request To Search Employee
+2023/10/30 10:44:07  Got The Employee Details 
+2023/10/30 10:44:13 Request To Search Employee
+2023/10/30 10:44:13  Got The Employee Details 
+2023/10/30 10:44:33 Request To Get All Employee
+2023/10/30 10:44:34 Fetched All Employees
+2023/10/30 10:44:52 Request To Update Employee Details
+2023/10/30 10:44:54 Employee Updated Succesfully
+2023/10/30 10:44:59 Request To Search Employee
+2023/10/30 10:44:59  Got The Employee Details 
+2023/10/30 10:45:45 Request To Search Employee
+2023/10/30 10:45:45 Employee not found
+2023/10/30 10:45:51 Request To Search Employee
+2023/10/30 10:45:52 Employee not found
+2023/10/30 10:52:25 Request To Get All Employee
+2023/10/30 10:52:26 Fetched All Employees
+2023/10/30 10:52:51 Request To Delete Employee
+2023/10/30 10:52:52 Employee Deleted Succesfully
+2023/10/30 10:52:54 Request To Delete Employee
+2023/10/30 10:52:55 Employee Deleted Succesfully
+2023/10/30 10:57:58 Request To Delete Employee
+2023/10/30 10:57:59 Employee Deleted Succesfully
+2023/10/30 10:58:13 Request To Add Employee
+2023/10/30 10:58:14 Employee Added Succesfully
+2023/10/30 10:58:24 Request To Delete Employee
+2023/10/30 10:58:24 Employee Deleted Succesfully
+2023/10/30 10:58:28 Request To Delete Employee
+2023/10/30 10:58:28 Employee Deleted Succesfully
+2023/10/30 10:59:34 Request To Delete Employee
+2023/10/30 10:59:34 Employee Deleted Succesfully
+2023/10/30 11:13:48 Request To Delete Employee
+2023/10/30 11:13:49 Employee Deleted Succesfully
+2023/10/30 11:13:58 Request To Search Employee
+2023/10/30 11:14:11 Request To Search Employee
+2023/10/30 11:14:18 Request To Search Employee

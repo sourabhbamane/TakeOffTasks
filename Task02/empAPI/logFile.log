@@ -1,0 +1,105 @@
+2023/10/15 18:40:37 Request To Get All Employees
+2023/10/15 18:41:01 Request TO Create Employee
+2023/10/15 18:41:01 Record Added Succesfully
+2023/10/16 00:01:45 Request TO Create Employee
+2023/10/16 00:01:45 Record Added Succesfully
+2023/10/16 09:44:05 Request TO Create Employee
+2023/10/16 09:44:05 Record Added Succesfully
+2023/10/16 09:44:10 Request TO Create Employee
+2023/10/16 09:44:10 Failed To add Record
+2023/10/16 09:44:16 Request TO Create Employee
+2023/10/16 09:44:16 Record Added Succesfully
+2023/10/16 09:44:25 Request TO Create Employee
+2023/10/16 09:44:25 Record Added Succesfully
+2023/10/16 09:44:31 Request TO Create Employee
+2023/10/16 09:44:31 Record Added Succesfully
+2023/10/16 09:51:54 Request TO Create Employee
+2023/10/16 09:51:54 Record Added Succesfully
+2023/10/16 09:52:00 Request TO Create Employee
+2023/10/16 09:52:00 Record Added Succesfully
+2023/10/16 10:07:07 Request TO Create Employee
+2023/10/16 10:07:07 Record Added Succesfully
+2023/10/16 10:07:24 Request TO Create Employee
+2023/10/16 10:07:24 Record Added Succesfully
+2023/10/16 10:07:53 Request TO Create Employee
+2023/10/16 10:07:53 Record Added Succesfully
+2023/10/16 10:07:56 Request TO Create Employee
+2023/10/16 10:07:56 Failed To add Record
+2023/10/16 10:08:21 Request TO Create Employee
+2023/10/16 10:08:21 Record Added Succesfully
+2023/10/16 12:36:21 Request TO Delete Employee
+2023/10/16 12:36:21 Employee Deleted Succesfully
+2023/10/16 12:36:35 Request TO Delete Employee
+2023/10/16 12:36:35 Employee Not Found
+2023/10/16 12:40:36 Request To Get All Employees
+2023/10/16 12:55:23 Request TO Create Employee
+2023/10/16 12:55:25 Record Added Succesfully
+2023/10/16 12:56:05 Request To Get All Employees
+2023/10/16 13:03:23 Request To get Employee Details From First Name
+2023/10/16 13:03:48 Request To get Employee Details From First Name
+2023/10/16 13:04:15 Request To get Employee Details From Last Name
+2023/10/16 13:04:22 Request To get Employee Details From Last Name
+2023/10/16 13:04:57 Request To get Employee Details From Role
+2023/10/16 13:05:02 Request To get Employee Details From Role
+2023/10/16 13:05:07 Request To get Employee Details From Role
+2023/10/16 13:06:04 Request To get Employee Details From emailId
+2023/10/16 13:07:49 Request To get Employee Details From id
+2023/10/16 13:08:29 Request To get Employee Details From id
+2023/10/16 13:08:36 Request To get Employee Details From emailId
+2023/10/16 13:08:36 No Records Found of id
+2023/10/16 13:08:48 Request To get Employee Details From Role
+2023/10/16 13:08:55 Request To get Employee Details From Last Name
+2023/10/16 13:10:37 Request To get Employee Details From First Name
+2023/10/16 13:10:45 Request To get Employee Details From First Name
+2023/10/16 13:10:53 Request To get Employee Details From First Name
+2023/10/16 13:11:00 Request To get Employee Details From First Name
+2023/10/16 13:11:08 Request To get Employee Details From First Name
+2023/10/16 13:11:15 Request To get Employee Details From First Name
+2023/10/16 13:14:49 Request To get Employee Details From First Name
+2023/10/16 13:15:31 Request To get Employee Details From id
+2023/10/16 13:16:42 Request To get Employee Details From id
+2023/10/16 13:17:44 Request To get Employee Details From id
+2023/10/16 13:17:48 Request To get Employee Details From id
+2023/10/16 13:18:23 Request To get Employee Details From emailId
+2023/10/16 13:18:23 No Records Found of id
+2023/10/16 13:18:47 Request To get Employee Details From emailId
+2023/10/16 13:18:47 No Records Found of id
+2023/10/16 14:50:18 Request To get Employee Details From First Name
+2023/10/16 16:20:55 Request To Get All Employees
+2023/10/16 16:27:23 Request To Get All Employees
+2023/10/16 16:28:12 Request TO Create Employee
+2023/10/16 16:28:13 Record Added Succesfully
+2023/10/16 16:28:19 Request To Get All Employees
+2023/10/16 16:28:34 Request TO Delete Employee
+2023/10/16 16:28:34 Employee Not Found
+2023/10/16 16:28:43 Request To get Employee Details From First Name
+2023/10/16 16:28:51 Request To get Employee Details From Last Name
+2023/10/16 16:28:58 Request To get Employee Details From First Name
+2023/10/16 16:29:04 Request To get Employee Details From Role
+2023/10/16 16:42:04 Request To Get All Employees
+2023/10/16 16:42:52 Request TO Create Employee
+2023/10/16 16:42:55 Record Added Succesfully
+2023/10/16 16:43:03 Request To Get All Employees
+2023/10/16 16:43:43 Request TO Update Employee
+2023/10/16 16:44:02 Request TO Update Employee
+2023/10/16 16:44:33 Request TO Delete Employee
+2023/10/16 16:44:33 Employee Not Found
+2023/10/16 16:44:40 Request TO Delete Employee
+2023/10/16 16:44:40 Employee Deleted Succesfully
+2023/10/16 16:45:02 Request To get Employee Details From First Name
+2023/10/16 16:45:14 Request To get Employee Details From First Name
+2023/10/16 16:45:25 Request To get Employee Details From Last Name
+2023/10/16 16:45:33 Request To get Employee Details From Last Name
+2023/10/16 16:45:43 Request To get Employee Details From Role
+2023/10/16 16:45:51 Request To get Employee Details From Role
+2023/10/16 16:46:04 Request To get Employee Details From emailId
+2023/10/16 16:46:04 No Records Found of id
+2023/10/16 16:46:15 Request To get Employee Details From emailId
+2023/10/16 16:46:15 No Records Found of id
+2023/10/16 16:46:22 Request To get Employee Details From emailId
+2023/10/16 16:46:35 Request To get Employee Details From id
+2023/10/16 16:47:04 Request To get Employee Details From id
+2023/10/16 16:51:47 Request TO Delete Employee
+2023/10/16 16:51:47 Invalid Employee ID
+2023/10/16 16:52:45 Request TO Delete Employee
+2023/10/16 16:52:45 Invalid Employee ID

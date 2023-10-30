@@ -1,0 +1,432 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API for managing employee data.",
+    "version": "1.0.0",
+    "title": "Employee API",
+    "contact": {
+      "email": "sourabhrbamane@gmail.com"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "employee",
+      "description": "Everything about your Employees"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/employee/": {
+      "get": {
+        "summary": "Welcome to Employee Management Application",
+        "description": "Welcomes the user to the Employee Management Application.",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Welcome message",
+            "schema": {
+              "type": "string"
+            }
+          }
+        },
+        "tags": [
+          "Home"
+        ]
+      }
+    },
+    "/employee/add": {
+      "post": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Add an Employee",
+        "description": "Add a new employee to the system.",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "request",
+            "description": "Employee data",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Employee"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Employee Added Successfully",
+            "schema": {
+              "$ref": "#/definitions/Employee"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/employees/get": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "get all present employees",
+        "description": "Multiple employees can be provided with comma separated strings",
+        "operationId": "getEmp",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Employee"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          },
+          "405": {
+            "description": "Invalid input"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/update": {
+      "put": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Update an employee",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "Employee ID to update",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "employee",
+            "in": "body",
+            "description": "Updated employee data",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Employee"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee updated successfully"
+          },
+          "400": {
+            "description": "Invalid input or failed to parse JSON body"
+          },
+          "404": {
+            "description": "Employee not found"
+          },
+          "500": {
+            "description": "Failed to update employee"
+          }
+        }
+      }
+    },
+    "/employees/fname": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Finds employees by firstname",
+        "description": "Multiple employees can be provided with comma separated strings",
+        "operationId": "findEmpByName",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "firstname",
+            "in": "query",
+            "description": "Employee name",
+            "required": true,
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Employee"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/employees/lname": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Finds employees by lastname",
+        "description": "Multiple employees can be provided with comma separated strings",
+        "operationId": "findEmpByLName",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "lastname",
+            "in": "query",
+            "description": "Employee Last Name",
+            "required": true,
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Employee"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/employees/role": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Finds employees by role",
+        "description": "Multiple employees can be provided with comma separated strings",
+        "operationId": "findEmpByRole",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "role",
+            "in": "query",
+            "description": "Employee role",
+            "required": true,
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Employee"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/employees/email": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Finds employees by email",
+        "description": "Multiple employees can be provided with comma separated strings",
+        "operationId": "findEmpByEmail",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "description": "Employee role",
+            "required": true,
+            "type": "string",
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Employee"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/employee/id": {
+      "get": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Find Employee by ID",
+        "description": "Returns a single employee",
+        "operationId": "getEmpById",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "ID of Employee to return",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Employee"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Emp not found"
+          }
+        }
+      }
+    },
+    "/employee/delete": {
+      "delete": {
+        "tags": [
+          "employee"
+        ],
+        "summary": "Delete an Employee",
+        "description": "Delete an employee record by ID.",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "description": "ID of the employee to be deleted",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee record deleted successfully"
+          },
+          "400": {
+            "description": "Bad Request - Invalid employee ID"
+          },
+          "404": {
+            "description": "Not Found - Employee record not found"
+          },
+          "500": {
+            "description": "Internal Server Error - Error reading/writing CSV file"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Employee": {
+      "type": "object",
+      "properties": {
+        "ID": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "FirstName": {
+          "type": "string"
+        },
+        "LastName": {
+          "type": "string"
+        },
+        "Email": {
+          "type": "string"
+        },
+        "PhoneNo": {
+          "type": "string"
+        },
+        "Role": {
+          "type": "string"
+        },
+        "Password": {
+          "type": "string"
+        },
+        "Salary": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    }
+  }
+}
