@@ -1,0 +1,303 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "version": "1.0.0",
+    "title": "Employee Management System",
+    "description": "REST APIs in Golang for performing CRUD operations on employee details using Firestore as a database. The APIs support Create, Read, Update, and Delete (CRUD) operations, providing a comprehensive solution for managing employee data.\n",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "sourabhrbamane@gmail.com"
+    },
+    "license": {
+      "name": "GO",
+      "url": "https://pkg.go.dev/github.com/google/go-licenses"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://asia-south1-employee-management-403415.cloudfunctions.net",
+      "description": "GCP Function"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Employee"
+    }
+  ],
+  "paths": {
+    "/getAllEmps": {
+      "get": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Get All Employee Data",
+        "description": "Retrieves employee data.",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Employee"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/addEmployee": {
+      "post": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Add New Employee",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Employee"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Employee Added Succesfully"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "409": {
+            "description": "Conflict"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/updateEmployee": {
+      "put": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Update Employee",
+        "description": "Update employee details by ID",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "description": "ID of the employee to update",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 123
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Employee"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Employee not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/deleteEmployee": {
+      "delete": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Delete Employee Data",
+        "description": "Delete employee data by ID.",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "description": "ID of the employee to delete.",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Employee not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/searchEmployee": {
+      "get": {
+        "tags": [
+          "Employee"
+        ],
+        "summary": "Search Employees",
+        "description": "Search for employees based on different criteria.",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "description": "ID of the employee",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "in": "query",
+            "name": "firstname",
+            "description": "First name of the employee",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "in": "query",
+            "name": "lastname",
+            "description": "Last name of the employee",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "in": "query",
+            "name": "email",
+            "description": "Email of the employee",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          },
+          {
+            "in": "query",
+            "name": "role",
+            "description": "Role of the employee",
+            "schema": {
+              "type": "string"
+            },
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Employee"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Employee not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Employee": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "salary": {
+            "type": "number",
+            "format": "float64"
+          }
+        }
+      }
+    }
+  }
+}
